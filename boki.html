@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="min-vh-100">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=no" />
+        <title>Boki Maruru</title>
+
+        <link rel="stylesheet" href="./assets/style.css" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Leaflet -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+        ></script>
+
+        <!-- Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-color-2">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-lg-auto">
+                            <a class="nav-link" href="#">Beranda</a>
+                            <a class="nav-link" href="#">Galeri</a>
+                            <a class="nav-link" href="#">Tentang</a>
+                            <a class="nav-link" href="#">Kontak</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="bg-color-1">
+            <section class="container-fluid hero-section py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <h1 class="display-4 fw-bold text-center">Boki Maruru</h1>
+                            <div class="galeri w-100 d-sm-none d-lg-grid mb-4">
+                                <a
+                                    href="./assets/img/boki_maruru (1).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (1).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (2).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (2).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (3).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (3).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (4).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (4).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (5).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (5).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (6).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (6).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (7).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (7).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (8).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (8).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (9).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (9).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (10).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (10).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (11).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (11).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (12).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (12).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (13).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (13).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (14).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (14).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (15).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (15).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                                <a
+                                    href="./assets/img/boki_maruru (16).jpeg"
+                                    target="_blank"
+                                    class="border border-light border-3 rounded rounded-3"
+                                >
+                                    <img src="./assets/img/boki_maruru (16).jpeg" class="card-img-top rounded rounded-3" />
+                                </a>
+                            </div>
+                            <h3 class="display-5 fw-bold text-center mb-4">Lokasi</h3>
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center py-2 bg-color-2">&copy; All rights reserved. Nuraini Tomaidi 2023</footer>
+
+        <!-- Feather Icons -->
+        <script>
+            feather.replace();
+        </script>
+        <script>
+            var map = L.map("map").setView([0.4660578159770697, 128.0907763269787], 13);
+
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                maxZoom: 200,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            }).addTo(map);
+
+            var marker = L.marker([0.4660578159770697, 128.0907763269787]).addTo(map);
+            var circle = L.circle([0.4660578159770697, 128.0907763269787], {
+                color: "red",
+                fillColor: "#f03",
+                fillOpacity: 0.4,
+                radius: 500,
+            }).addTo(map);
+
+            marker.bindPopup("<strong>Goa Boki Maruru</strong></br>Halmahera Tengah").openPopup();
+
+            // Creating layer group
+            var layerGroup = L.layerGroup([hydMarker, vskpMarker, vjwdMarker, polygon]);
+            // Adding layer group to map
+            layerGroup.addTo(map);
+        </script>
+    </body>
+</html>

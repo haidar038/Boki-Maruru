@@ -1,0 +1,86 @@
+:root {
+    --color-1: #4c4b16;
+    --color-2: #898121;
+    --color-3: #e7b10a;
+    --color-4: #f7f1e5;
+}
+
+.hero-img {
+    aspect-ratio: 1/1;
+    object-position: center;
+}
+
+.bg-color-1 {
+    background-color: var(--color-1);
+    color: #fff;
+}
+
+.bg-color-2 {
+    background-color: var(--color-2);
+    color: #fff;
+}
+
+.bg-color-3 {
+    background-color: var(--color-3);
+    color: #222;
+}
+
+.bg-color-4 {
+    background-color: var(--color-4);
+}
+
+.text-color-1 {
+    color: var(--color-1);
+}
+
+.text-color-2 {
+    color: var(--color-2);
+}
+
+.text-color-3 {
+    color: var(--color-3);
+}
+
+.text-color-4 {
+    color: var(--color-4);
+}
+
+.btn-color-1 {
+    background-color: var(--color-1);
+    color: #f7f1e5;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.galeri a img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+#map {
+    height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body,
+    main {
+        height: 100vh;
+    }
+
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #map {
+        height: 60vh;
+    }
+}
